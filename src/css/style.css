@@ -96,7 +96,7 @@ main {
 
 /* ---------------------- */
 
-.notes__container {
+.notes-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-medium);
@@ -110,7 +110,6 @@ main {
 .note-card {
     min-height: 200px;
     max-height: 250px;
-    max-width: 350px;
     background-color: var(--color-note-background);
     line-break: anywhere;
     hyphens: auto;
@@ -203,4 +202,9 @@ main {
     font-family: Kalam-Bold, sans-serif;
     background-color: var(--color-submit-buttons);
     border: 1px solid black;
+}
+
+/* Edit mode */
+.note-card--edited {
+    background-color: yellow;
 }

@@ -30,6 +30,7 @@ const confirmDelete = (id) => {
   const filteredArray = noteList.filter((note) => note.id !== id);
   storeNotes(filteredArray);
   renderNotes();
+  closeModal();
 };
 
 export { displayDeleteModal, closeModal };
