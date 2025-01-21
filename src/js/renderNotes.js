@@ -62,6 +62,13 @@ const renderNotes = () => {
         submitButton.textContent = "Confirm Edit";
         submitButton.classList.add("note-card--edited");
       });
+
+      noteCard.addEventListener("click", () => {
+        document.querySelectorAll(".note-card").forEach((card) => {
+          card.style.zIndex = 0;
+        });
+        noteCard.style.zIndex = 1;
+      });
     });
   }
 };
